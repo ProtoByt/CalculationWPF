@@ -5,9 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KalculationWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="630" Width="500">
     <Grid>
-        <Button x:Name="ExitButt" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center" Click="ExitButt_Click"/>
+        <Border Margin="5" Padding="5" Background="LightYellow" BorderBrush="SteelBlue" BorderThickness="3,5,3,5" CornerRadius="10" VerticalAlignment="Top" Height="130" Width="440">
+            <TextBlock Name="ShowNumText" Text="" Height="100" Width="450" VerticalAlignment="Top" FontSize="70" Margin="2,15,20,20" HorizontalAlignment="Right" FlowDirection="RightToLeft">
+            </TextBlock>
+        </Border>
+        <UniformGrid Rows="4" Columns="4" Height="400" Width="450" Margin="5,160,6,20">
+            <Button Name="btn1" Content="1" FontSize="35"/>
+            <Button Name="btn2" Content="2" FontSize="35"/>
+            <Button Name="btn3" Content="3" FontSize="35"/>
+            <Button Name="btnD" Content="/" FontSize="35"/>
+            <Button Name="btn4" Content="4" FontSize="35"/>
+            <Button Name="btn5" Content="5" FontSize="35"/>
+            <Button Name="btn6" Content="6" FontSize="35"/>
+            <Button Name="btnX" Content="X" FontSize="35"/>
+            <Button Name="btn7" Content="7" FontSize="35"/>
+            <Button Name="btn8" Content="8" FontSize="35"/>
+            <Button Name="btn9" Content="9" FontSize="35"/>
+            <Button Name="btnM" Content="—" FontSize="35"/>
+            <Button Name="btnC" Content="C" FontSize="35"/>
+            <Button Name="btn0" Content="0" FontSize="35"/>
+            <Button Name="btnE" Content="="  FontSize="35"/>
+            <Button Name="btnP" Content="+" FontSize="35"/>
 
+        </UniformGrid>
     </Grid>
 </Window>
